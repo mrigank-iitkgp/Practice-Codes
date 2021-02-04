@@ -6,6 +6,7 @@ Science is what we understand well enough to explain to a computer,
 https://www.hackerearth.com/practice/algorithms/string-algorithm/string-searching/practice-problems/algorithm/count-words-in-given-string-aca26de8/ */
 
 #include <iostream>
+#include <sstream>
 #include <unordered_map>
 #include <map>
 #include <queue>
@@ -67,8 +68,22 @@ int main()
     #endif
     /**************************************************************/    
 
-    string s;
-    cin >> s;
-    stringstream str(s);
-    int cnt = 0;
+    ll t;
+    cin >> t;
+    string dummy;
+    getline(cin , dummy);
+    while(t--)
+    {
+        string s;
+        getline(cin , s);
+        //cout << s << endl;
+        stringstream str(s);
+        int cnt = 0;
+        string word;
+        while(str >> word)
+        {
+            cnt++;
+        }
+        cout << cnt << endl;
+    }
  } 
