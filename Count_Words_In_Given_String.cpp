@@ -76,7 +76,7 @@ int main()
     {
         string s;
         getline(cin , s);
-        //cout << s << endl;
+        deb(s);
         stringstream str(s);
         int cnt = 0;
         string word;
