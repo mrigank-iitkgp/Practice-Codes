@@ -1,1 +1,11 @@
-5
+check :: 14:01	start :: 00:00	finish :: 23:42
+check :: 14:01	start :: 00:01	finish :: 11:59
+check :: 14:01	start :: 00:30	finish :: 12:00
+check :: 14:01	start :: 11:59	finish :: 23:59
+1001
+check :: 16:12	start :: 00:00	finish :: 23:59
+check :: 16:12	start :: 13:00	finish :: 14:12
+check :: 16:12	start :: 16:12	finish :: 16:12
+check :: 16:12	start :: 02:12	finish :: 04:12
+check :: 16:12	start :: 12:00	finish :: 23:59
+10101
