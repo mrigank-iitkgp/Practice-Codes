@@ -3,7 +3,7 @@ Science is what we understand well enough to explain to a computer,
     Art is everything else we do - Donald E. Knuth */
 
 /*
-Problem Link - https://www.codechef.com/FEB21C/problems/MAXFUN */
+Problem Link - https://www.codechef.com/FEB21C/problems/HDIVISR */
 
 #include <iostream>
 #include <unordered_map>
@@ -67,25 +67,15 @@ int main()
     #endif
     /**************************************************************/    
 
-    ll t;
-    cin >> t;
-    while(t--)
+    ll n;
+    cin >> n;
+    ll ans = 1;
+    for(ll i = 2 ; i <= 10 ; i++)
     {
-        ll n;
-        cin >> n;
-        vl arr(n);
-        ll i;
-        fo(i , n) cin >> arr[i];
-        sort(all(arr));
-        ll x = arr[0];
-        ll y = arr[1];
-        ll z = arr[n - 1];
-        ll ans = abs(x - y) + abs(y - z) + abs(z - x);
-        y = arr[0];
-        ans = max(ans , abs(x - y) + abs(y - z) + abs(z - x));
-        x = arr[1];
-        y = arr[1];
-        ans = max(ans , abs(x - y) + abs(y - z) + abs(z - x));
-        cout << ans << endl;
+        if(n % i == 0)
+        {
+            ans = max(ans , i);
+        }
     }
+    cout << ans << endl;
  } 
