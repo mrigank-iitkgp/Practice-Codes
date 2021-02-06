@@ -1,5 +1,5 @@
 /*
- Problem Link: https://leetcode.com/problems/sum-of-unique-elements*/
+Problem Link : https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray*/
 
 #include <iostream>
 #include <unordered_map>
@@ -17,18 +17,16 @@ using namespace std;
 
 class Solution {
 public:
-    int sumOfUnique(vector<int>& nums) 
+    int maxAbsoluteSum(vector<int>& nums) 
     {
-        unordered_map < int , int > mp;
+        int preSum = 0;
+        int mx = 0 , mn = 0;
         for(auto num : nums)
         {
-            mp[num]++;
+            preSum += num;
+            mx = max(mx , preSum);
+            mn = min(mn , preSum);
         }
-        int ans = 0;
-        for(auto x : mp)
-        {
-            if(x.second == 1) ans += x.first;
-        }
-        return ans;
+        return mx - mn;
     }
 };
