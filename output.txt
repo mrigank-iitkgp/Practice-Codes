@@ -1,2 +1,3 @@
-Case 1: The sum of 26’s prime factors: 15
-Case 2: The sum of 90’s prime factors: 13
+3
+6
+5
