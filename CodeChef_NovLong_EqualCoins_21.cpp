@@ -71,6 +71,7 @@ int main()
         ll X , Y;
         cin >> X >> Y;
         ll totalCoins = X + 2 * Y;
+        deb2(X , Y);
         if(totalCoins % 2 == 0) 
         {
             if(X == 0 && Y % 2 != 0)
