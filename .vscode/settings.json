@@ -4,7 +4,8 @@
         "__locale": "cpp",
         "string": "cpp",
         "iostream": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "stack": "cpp"
     },
     "python.pythonPath": "/Applications/Xcode.app/Contents/Developer/usr/bin/python3"
 }
