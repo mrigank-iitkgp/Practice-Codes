@@ -1,2 +1,7 @@
-YES
-NO
+1 2 6 5 4 13 5 7 11 
+randomNumber :: 8	high :: 8
+randomNumber :: 6	high :: 6
+randomNumber :: 5	high :: 5
+randomNumber :: 3	high :: 3
+randomNumber :: 1	high :: 1
+1 2 4 5 5 6 7 11 13 
